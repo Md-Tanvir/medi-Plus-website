@@ -1,9 +1,11 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import useAuth from '../../hooks/useAuth';
 import logo from '../../images/logo/logo.png'
 import './Header.css'
 
 const Header = () => {
+    const {logOut,user}=useAuth();
     const style = {
         textDecoration: "none",
         marginRight: "25px",
@@ -42,10 +44,16 @@ const Header = () => {
                 <NavLink style={style} to="/doctors">
                   <li className="nav-item items">Our Doctors</li>
                 </NavLink>
-                <NavLink style={style} to="aboutus">
+                <NavLink style={style} to="/aboutus">
                   <li className="nav-item items">About Us</li>
                 </NavLink>
-                
+                {user.email && <span>{user.displayName}</span>}
+                { user?.email ? <span style={{marginLeft:'15px',fontSize:'20px',cursor:'pointer'}} onClick={logOut}><i class="fas fa-sign-out-alt"></i></span>:
+                <NavLink style={style} to="/login">
+                  <li className="nav-item items">Login</li>
+                </NavLink>    
+                }
+
               </ul>
             </div>
           </div>

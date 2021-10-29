@@ -19,13 +19,13 @@ const ServiceDetails = (props) => {
   }, [serviceId]);
 
 
-
   return (
     <div className='container mt-5'>
       <div className='row'>
         <div className="col-6">
           <h2 className="service-title">{details?.name}</h2>
           <p className="service-text">{details?.description}</p>
+          <button className='btn hero-btn'>Get It Now</button>
         </div>
         <div className="col-6">
           <img src={details?.img} className="img-fluid" alt="" />

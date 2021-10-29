@@ -50,34 +50,34 @@ const Home = () => {
       <div className="dr-area">
       <h2 className="text-center my-5 section-title">Some Of Our Best Doctors</h2>
         <div className="row g-5">
-          <div className="col-4">
+          <div className="col-md-4 col-12 dr-images">
             <img src={img1} alt="" />
             <h3 className="mt-2 dr-name">Dr. Alexa Hamin</h3>
             <p>Cardiologist</p>
           </div>
-          <div className="col-4">
+          <div className="col-md-4 col-12 dr-images">
             <img src={img2} alt="" />
             <h3 className="mt-2 dr-name">Dr. Selena Gomez</h3>
             <p>Pediatrician</p>
           </div>
-          <div className="col-4">
+          <div className="col-md-4 col-12 dr-images">
             <img src={img3} alt="" />
             <h3 className="mt-2 dr-name">Dr. Justin Bieber</h3>
             <p>Neurologist</p>
           </div>
         </div>
         <div className="row g-5">
-          <div className="col-4">
+          <div className="col-md-4 col-12 dr-images">
             <img src={img4} alt="" />
             <h3 className="mt-2 dr-name">Dr. Charlie Puth</h3>
             <p>Rheumatologist</p>
           </div>
-          <div className="col-4">
+          <div className="col-md-4 col-12 dr-images">
             <img src={img5} alt="" />
             <h3 className="mt-2 dr-name">Dr. James Bond</h3>
             <p>Endocrinologist</p>
           </div>
-          <div className="col-4">
+          <div className="col-md-4 col-12 dr-images">
             <img src={img6} alt="" />
             <h3 className="mt-2 dr-name">Dr. Emma Watson</h3>
             <p>Psychiatrist</p>
@@ -88,10 +88,10 @@ const Home = () => {
       <div className='brand-area'>
         <h2 className="text-center my-5 section-title">Associated With</h2>
         <div className="row">
-          <div className="col-3"><img src={brand1} className='brand-img' alt="" /></div>
-          <div className="col-3"><img src={brand2} className='brand-img' alt="" /></div>
-          <div className="col-3"><img src={brand3} className='brand-img' alt="" /></div>
-          <div className="col-3"><img src={brand4} className='brand-img' alt="" /></div>
+          <div className="col-md-3 col-12 text-center"><img src={brand1} className='brand-img' alt="" /></div>
+          <div className="col-md-3 col-12 text-center"><img src={brand2} className='brand-img' alt="" /></div>
+          <div className="col-md-3 col-12 text-center"><img src={brand3} className='brand-img' alt="" /></div>
+          <div className="col-md-3 col-12 text-center"><img src={brand4} className='brand-img' alt="" /></div>
         </div>
 
       </div>

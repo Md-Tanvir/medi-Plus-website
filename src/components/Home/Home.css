@@ -7,7 +7,7 @@
 .hero-text h1{
     font-size: 55px;
     color:#ff8906;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 1.5em;
 }
 .hero-text h1 span{
@@ -32,14 +32,14 @@
     background-color: #ff8906;
     color: white;
 }
-.dr-area .row .col-4{
+.dr-area .row .dr-images{
     text-align: center;
 
 }
 .dr-area .row{
     margin-bottom: 80px;
 }
-.dr-area .row .col-4 img{
+.dr-area .row .dr-images img{
     width: 250px;
     height: 250px;
     object-fit: cover;
