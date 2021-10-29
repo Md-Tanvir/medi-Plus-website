@@ -1,0 +1,13 @@
+.card img{
+    height: 250px;
+    object-fit: fill;
+}
+.card h4{
+    font-weight: 700;
+    color: #094067;
+}
+.appo-btn{
+    background-color: #ef4565;
+    color: white;
+    font-weight: 600;
+}

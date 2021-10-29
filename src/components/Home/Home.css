@@ -1,0 +1,24 @@
+.hero-area{
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 100px;
+    margin-top: 70px;
+}
+.hero-text h1{
+    font-size: 55px;
+    color:#094067;
+    font-weight: 800;
+    line-height: 1.5em;
+}
+.hero-text h1 span{
+    color: #ef4565 ;
+}
+.service-area{
+    margin-top: 100px;
+}
+
+.section-title{
+    font-size: 45px;
+    color:#094067;
+    font-weight: 700;
+}
