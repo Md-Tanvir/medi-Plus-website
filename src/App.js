@@ -9,6 +9,8 @@ import Header from './components/Header/Header';
 import Services from './components/Services/Services';
 import ServiceDetails from './components/ServiceDetails/ServiceDetails';
 import Error from './components/Error/Error';
+import Doctors from './components/Doctors/Doctors';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -30,10 +32,15 @@ function App() {
           <ServiceDetails>
           </ServiceDetails>
         </Route>
+        <Route path='/doctors'>
+          <Doctors></Doctors>
+        </Route>
+        
         <Route path='*'>
           <Error></Error>
         </Route>
       </Switch>
+      <Footer></Footer>
      </Router>
      
     </div>

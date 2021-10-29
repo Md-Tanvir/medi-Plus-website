@@ -2,3 +2,9 @@
     max-height: 500px;
     text-align: center;
 }
+.error-btn{
+    background-color: #ff8906;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}

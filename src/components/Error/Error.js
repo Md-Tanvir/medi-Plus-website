@@ -5,11 +5,13 @@ import './Error.css'
 
 const Error = () => {
     return (
-        <div className='container text-center'>
+        <div className='container text-center align-items-center'>
             <img src={img} className="img-fluid error-img" alt="" />
+            <div>
             <Link to='/home'>
-            <button className='btn appo-btn'>GO HOME</button>
+            <button className='btn error-btn'>GO HOME</button>
             </Link>
+            </div>
         </div>
         
     );

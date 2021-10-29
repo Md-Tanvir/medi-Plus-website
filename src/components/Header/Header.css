@@ -3,7 +3,7 @@
 }
 .navbar-light .navbar-nav .nav-link{
     font-weight: 700;
-    color: #094067;
+    color: #ff8906;
 }
 .navbar-brand{
     display: flex;
@@ -12,7 +12,7 @@
 .navbar-brand p{
     font-weight: 700;
     margin-left: 5px;
-    color: #094067;
+    color: #ff8906;
     margin-bottom: 0;
     width: 50%;
 }
@@ -22,7 +22,7 @@
 }
 .items{
     font-weight: 700;
-    color: #094067;
+    color: #ff8906;
 }
 .items:hover{
     color: #ef4565;

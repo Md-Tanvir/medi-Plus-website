@@ -4,7 +4,7 @@
 }
 .card h4{
     font-weight: 700;
-    color: #094067;
+    color:#ff8906;
 }
 .appo-btn{
     background-color: #ef4565;
@@ -12,6 +12,6 @@
     font-weight: 600;
 }
 .appo-btn:hover{
-    background-color: #094067;
+    background-color: #ff8906;
     color: white;
 }

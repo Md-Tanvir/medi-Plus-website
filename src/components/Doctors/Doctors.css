@@ -1,0 +1,18 @@
+.dr-img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.dr-section .row .col-4{
+    text-align: center;
+}
+.dr-section .row{
+    margin-bottom: 80px;
+}
+.dr-header{
+    font-weight: 600;
+    font-size: 35px;
+    margin-bottom: 30px;
+    color: #ff8906;
+}

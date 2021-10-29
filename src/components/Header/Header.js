@@ -39,12 +39,13 @@ const Header = () => {
                 <NavLink style={style} to="/services">
                   <li className="nav-item items">Services</li>
                 </NavLink>
+                <NavLink style={style} to="/doctors">
+                  <li className="nav-item items">Our Doctors</li>
+                </NavLink>
                 <NavLink style={style} to="aboutus">
                   <li className="nav-item items">About Us</li>
                 </NavLink>
-                <NavLink style={style} to="/contactus">
-                  <li className="nav-item items">Contact Us</li>
-                </NavLink>
+                
               </ul>
             </div>
           </div>
