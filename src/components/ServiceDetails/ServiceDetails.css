@@ -1,0 +1,13 @@
+.service-text{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5em;
+}
+.service-title{
+    font-size: 45px;
+    font-weight: 700;
+    color: #094067;
+}
+.row{
+    align-items: center;
+}

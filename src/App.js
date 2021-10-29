@@ -7,6 +7,8 @@ import {
 } from "react-router-dom";
 import Header from './components/Header/Header';
 import Services from './components/Services/Services';
+import ServiceDetails from './components/ServiceDetails/ServiceDetails';
+import Error from './components/Error/Error';
 
 function App() {
   return (
@@ -23,6 +25,13 @@ function App() {
         </Route>
         <Route path='/services'>
         <Services></Services>
+        </Route>
+        <Route path='/service/:serviceId'>
+          <ServiceDetails>
+          </ServiceDetails>
+        </Route>
+        <Route path='*'>
+          <Error></Error>
         </Route>
       </Switch>
      </Router>

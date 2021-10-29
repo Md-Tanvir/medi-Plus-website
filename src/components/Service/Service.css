@@ -11,3 +11,7 @@
     color: white;
     font-weight: 600;
 }
+.appo-btn:hover{
+    background-color: #094067;
+    color: white;
+}

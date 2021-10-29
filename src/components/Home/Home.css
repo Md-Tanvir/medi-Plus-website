@@ -22,3 +22,30 @@
     color:#094067;
     font-weight: 700;
 }
+.hero-btn{
+    color: white;
+    background-color: #ef4565;
+    font-weight: 600;
+    padding: 10px 20px;
+}
+.hero-btn:hover{
+    background-color: #094067;
+    color: #ef4565;
+}
+.dr-area .row .col-4{
+    text-align: center;
+
+}
+.dr-area .row{
+    margin-bottom: 80px;
+}
+.dr-area .row .col-4 img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.dr-name{
+    font-weight: 600;
+    color:#094067;
+}
