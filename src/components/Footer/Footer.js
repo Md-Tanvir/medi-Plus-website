@@ -32,9 +32,9 @@ const Footer = () => {
                 </div>
                 <div className="col-md-4 col-12">
                     <h2>GET US</h2>
-                    <p><i class="fas fa-map-marker-alt"></i> 21 Shyamoli, Sylhet Road, Dhaka-1203, Bangladesh</p>
-                    <p><i class="fas fa-phone-alt"></i> 10233, +88096529270100</p>
-                    <p><i class="far fa-envelope"></i> info@mediplus.com , mediplus.dhaka@gmail.com</p>
+                    <p><i className="fas fa-map-marker-alt"></i> 21 Shyamoli, Sylhet Road, Dhaka-1203, Bangladesh</p>
+                    <p><i className="fas fa-phone-alt"></i> 10233, +88096529270100</p>
+                    <p><i className="far fa-envelope"></i> info@mediplus.com , mediplus.dhaka@gmail.com</p>
                 </div>
             </div>
             </div>
