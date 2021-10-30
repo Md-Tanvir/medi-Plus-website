@@ -14,34 +14,36 @@ initializeAuthentication();
 
 const useFirebase = () => {
   const [user, setUser] = useState({});
-  const[isLoading,setisLoading]= useState(true);
+  const [isLoading, setisLoading] = useState(true);
 
   const auth = getAuth();
   const googleProvider = new GoogleAuthProvider();
 
+  // Google sign in
   const googleSignIn = () => {
-    return signInWithPopup(auth, googleProvider)
-      
+    return signInWithPopup(auth, googleProvider);
   };
 
+  // For log out
   const logOut = () => {
-    signOut(auth).then(() => {
-      setUser({});
-    })
-    .finally(()=> setisLoading(false))
+    signOut(auth)
+      .then(() => {
+        setUser({});
+      })
+      .finally(() => setisLoading(false));
   };
 
-
-  const registerNewUser = (email,password) => { 
-    return createUserWithEmailAndPassword(auth, email, password)
+  // Registering new user through email and password
+  const registerNewUser = (email, password) => {
+    return createUserWithEmailAndPassword(auth, email, password);
   };
 
-  const logInWithEmail=(email,password)=>{
-    return signInWithEmailAndPassword(auth,email,password)
-    
-  }
+ // RSign up through email and password
+  const logInWithEmail = (email, password) => {
+    return signInWithEmailAndPassword(auth, email, password);
+  };
 
-  // observe user state change
+  // Observing user state change
   useEffect(() => {
     const unsbscribed = onAuthStateChanged(auth, (user) => {
       if (user) {
@@ -49,7 +51,7 @@ const useFirebase = () => {
       } else {
         setUser({});
       }
-      setisLoading(false)
+      setisLoading(false);
     });
     return () => unsbscribed;
   }, []);
@@ -59,7 +61,10 @@ const useFirebase = () => {
     user,
     logOut,
     registerNewUser,
-    logInWithEmail,isLoading,setisLoading,setUser
+    logInWithEmail,
+    isLoading,
+    setisLoading,
+    setUser,
   };
 };
 

@@ -8,17 +8,22 @@ const Login = () => {
 
   const { googleSignIn, logInWithEmail,setisLoading,setUser } = useAuth();
 
+  // For going back to where it came from
   const history = useHistory();
   const location = useLocation();
   const url = location.state?.from || '/home';
 
+
+ // getting email input
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
   };
+  // getting password input
   const handlePasswordChange = (e) => {
     setPassword(e.target.value);
   };
 
+  // login through email and password
   const handleEmailLogin = (e) => {
 
     e.preventDefault();
@@ -29,14 +34,13 @@ const Login = () => {
         const user = userCredential.user;
         setUser(user)
         history.push(url)
-        // ...
       })
       .catch((error) => {
         const errorMessage = error.message;
         console.log(errorMessage);
       });
   };
-
+// Google login
   const handleGoogleLogin = () => {
     setisLoading(true)
     googleSignIn()

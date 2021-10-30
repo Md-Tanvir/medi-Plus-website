@@ -7,6 +7,7 @@ const ServiceDetails = (props) => {
 
   const [details, setDetails] = useState({});
 
+  // Getting data according to their id
   useEffect(() => {
     const url = `/data.json`;
     fetch(url)
@@ -22,6 +23,7 @@ const ServiceDetails = (props) => {
   return (
     <div className='container mt-5'>
       <div className='row gy-3'>
+        {/* Single Service Showing Area */}
         <div className="col-md-6 col-12">
           <h2 className="service-title">{details?.name}</h2>
           <p className="service-text">{details?.description}</p>

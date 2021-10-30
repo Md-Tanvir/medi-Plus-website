@@ -14,6 +14,7 @@ import './Doctors.css';
 
 const Doctors = () => {
   return (
+    // Doctor showing area
     <div className='dr-section container'>
          <h1 className='section-title text-center'>-- Our All Doctors --</h1>
       <div className="row">
