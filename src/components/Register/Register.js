@@ -5,7 +5,7 @@ import useAuth from "../../hooks/useAuth";
 const Register = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
+  const [error, setError] = useState("");
 
   // For going back to where it came from
   const history = useHistory();
@@ -14,7 +14,6 @@ const Register = () => {
 
   const { registerNewUser, googleSignIn, setisLoading, setUser } = useAuth();
 
-
   // registering through email and password
   const handleRegistration = (e) => {
     e.preventDefault();
@@ -22,11 +21,14 @@ const Register = () => {
       .then((userCredential) => {
         // Signed in
         const user = userCredential.user;
-
+        setError("");
         setUser(user);
         history.push(url);
       })
-      .catch((error) => {});
+      .catch((error) => {
+        const errorMessage = error.message;
+        setError(errorMessage);
+      });
   };
   // Google login
   const handleGoogleLogin = () => {
@@ -34,13 +36,13 @@ const Register = () => {
     googleSignIn()
       .then((result) => {
         const user = result.user;
-
+        setError("");
         setUser(user);
         history.push(url);
       })
       .catch((error) => {
         const errorMessage = error.message;
-        console.log(errorMessage);
+        setError(errorMessage);
       })
       .finally(() => setisLoading(false));
   };
@@ -49,7 +51,7 @@ const Register = () => {
     setEmail(e.target.value);
   };
 
-    // getting password input
+  // getting password input
   const handlePasswordChange = (e) => {
     setPassword(e.target.value);
   };
@@ -76,6 +78,7 @@ const Register = () => {
             required
             onBlur={handlePasswordChange}
           />
+          <p className='text-danger'>{error}</p>
           <input type="submit" value="Submit" className="btn btn-success" />
         </form>
         <hr />

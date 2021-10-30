@@ -5,10 +5,11 @@ import "./Login.css";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
 
   const { googleSignIn, logInWithEmail,setisLoading,setUser } = useAuth();
 
-  // For going back to where it came from
+  // For going back to where it came
   const history = useHistory();
   const location = useLocation();
   const url = location.state?.from || '/home';
@@ -33,14 +34,15 @@ const Login = () => {
         // Signed in
         const user = userCredential.user;
         setUser(user)
+        setError('')
         history.push(url)
       })
       .catch((error) => {
         const errorMessage = error.message;
-        console.log(errorMessage);
+        setError(errorMessage);
       });
   };
-// Google login
+  // GOogle sign in
   const handleGoogleLogin = () => {
     setisLoading(true)
     googleSignIn()
@@ -52,7 +54,7 @@ const Login = () => {
 
       .catch((error) => {
         const errorMessage = error.message;
-        console.log(errorMessage);
+        setError(errorMessage);
       })
       .finally(()=> setisLoading(false))
   };
@@ -68,6 +70,7 @@ const Login = () => {
             placeholder="Enter your email"
             className="form-control mb-4"
             onBlur={handleEmailChange}
+            required
           />
           <h5>Your Password</h5>
           <input
@@ -75,7 +78,9 @@ const Login = () => {
             placeholder="Enter your password"
             className="form-control mb-4"
             onBlur={handlePasswordChange}
+            required
           />
+          <p className='text-danger'>{error}</p>
           <input type="submit" value="Submit" className="btn btn-success" />
         </form>
         <hr />
