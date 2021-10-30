@@ -1,5 +1,5 @@
 .dr-img{
-    width: 250px;
+    max-width: 250px;
     height: 250px;
     object-fit: cover;
     border-radius: 50%;

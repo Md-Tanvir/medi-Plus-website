@@ -9,7 +9,7 @@ const Footer = () => {
     return (
         <div className='footer-area mt-5 py-5'>
             <div className=" container">
-            <div className="row g-5">
+            <div className="row gy-5">
               {/* About Mediplus */}
                 <div className="col-md-4 col-12">
                     <h2>MediPlus</h2>

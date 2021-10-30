@@ -52,3 +52,10 @@
 .brand-img{
     max-width: 250px ;
 }
+
+@media (max-width:600px) {
+    .hero-text h1{
+        font-size: 45px;
+       margin: 0;
+    }
+}

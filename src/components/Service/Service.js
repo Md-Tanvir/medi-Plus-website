@@ -10,7 +10,7 @@ const Service = (props) => {
       {/* Service card structure */}
         <div className="col">
           <div className="card h-100">
-            <img src={img} className="card-img-top" alt="..." />
+            <img src={img} className="card-img-top img-fluid" alt="..." />
             <div className="card-body">
               <h4 className="card-title">{name}</h4>
               <p className="card-text">

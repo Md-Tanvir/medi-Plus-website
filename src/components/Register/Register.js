@@ -79,7 +79,7 @@ const Register = () => {
             onBlur={handlePasswordChange}
           />
           <p className='text-danger'>{error}</p>
-          <input type="submit" value="Submit" className="btn btn-success" />
+          <input type="submit" value="Register" className="btn btn-success" />
         </form>
         <hr />
         <button

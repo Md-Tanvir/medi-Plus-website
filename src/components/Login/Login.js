@@ -81,7 +81,7 @@ const Login = () => {
             required
           />
           <p className='text-danger'>{error}</p>
-          <input type="submit" value="Submit" className="btn btn-success" />
+          <input type="submit" value="Login" className="btn btn-success" />
         </form>
         <hr />
         <button
