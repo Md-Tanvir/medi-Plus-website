@@ -47,7 +47,7 @@ const Header = () => {
                 <NavLink style={style} to="/aboutus">
                   <li className="nav-item items">About Us</li>
                 </NavLink>
-                {user?.email && <span>{user.displayName}</span>}
+                {user?.email && <span>{user.displayName || user.email}</span>}
                 { user?.email ? <span style={{marginLeft:'15px',fontSize:'20px',cursor:'pointer'}} onClick={logOut}><i className="fas fa-sign-out-alt"></i></span>:
                 <NavLink style={style} to="/login">
                   <li className="nav-item items">Login</li>

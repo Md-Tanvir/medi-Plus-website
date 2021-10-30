@@ -5,7 +5,7 @@ import {
   signOut,
   onAuthStateChanged,
   createUserWithEmailAndPassword,
-  updateProfile,signInWithEmailAndPassword,
+  signInWithEmailAndPassword,
 } from "firebase/auth";
 import { useEffect, useState } from "react";
 import initializeAuthentication from "../components/Firebase/firebase.init";

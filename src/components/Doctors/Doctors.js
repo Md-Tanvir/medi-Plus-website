@@ -18,50 +18,50 @@ const Doctors = () => {
          <h1 className='section-title text-center'>-- Our All Doctors --</h1>
       <div className="row">
           <h2 className="text-center dr-header">Cardiologists</h2>
-        <div className="col-4">
+        <div className="col-md-4 col-12">
           <img src={img1} alt="" className="dr-img" />
           <h3 className="mt-2 dr-name">Dr. Emma Watson</h3>
         </div>
-        <div className="col-4">
+        <div className="col-md-4 col-12">
           <img src={img2} alt="" className="dr-img" /><h3 className="mt-2 dr-name">Dr. James Bond</h3>
         </div>
-        <div className="col-4">
+        <div className="col-md-4 col-12">
           <img src={img3} alt="" className="dr-img" /><h3 className="mt-2 dr-name">Dr. Justin Bieber</h3>
         </div>
       </div>
       <div className="row">
       <h2 className="text-center dr-header">Neurologist</h2>
-        <div className="col-4">
+        <div className="col-md-4 col-12">
           <img src={img4} alt="" className="dr-img" /><h3 className="mt-2 dr-name">Dr. Emma Watson</h3>
         </div>
-        <div className="col-4">
+        <div className="col-md-4 col-12">
           <img src={img5} alt="" className="dr-img" /><h3 className="mt-2 dr-name">Dr. Emma Watson</h3>
         </div>
-        <div className="col-4">
+        <div className="col-md-4 col-12">
           <img src={img6} alt="" className="dr-img" /><h3 className="mt-2 dr-name">Dr. James Bond</h3>
         </div>
       </div>
       <div className="row">
       <h2 className="text-center dr-header">Rheumatologist</h2>
-        <div className="col-4">
+        <div className="col-md-4 col-12">
           <img src={img7} alt="" className="dr-img" /><h3 className="mt-2 dr-name">Dr. Emma Watson</h3>
         </div>
-        <div className="col-4">
+        <div className="col-md-4 col-12">
           <img src={img8} alt="" className="dr-img" /><h3 className="mt-2 dr-name">Dr. Justin Bieber</h3>
         </div>
-        <div className="col-4">
+        <div className="col-md-4 col-12">
           <img src={img9} alt="" className="dr-img" /><h3 className="mt-2 dr-name">Dr. James Bond</h3>
         </div>
       </div>
       <div className="row">
       <h2 className="text-center dr-header">Endocrinologist</h2>
-        <div className="col-4">
+        <div className="col-md-4 col-12">
           <img src={img10} alt="" className="dr-img" /><h3 className="mt-2 dr-name">Dr. Emma Watson</h3>
         </div>
-        <div className="col-4">
+        <div className="col-md-4 col-12">
           <img src={img2} alt="" className="dr-img" /><h3 className="mt-2 dr-name">Dr. James Bond</h3>
         </div>
-        <div className="col-4">
+        <div className="col-md-4 col-12">
           <img src={img3} alt="" className="dr-img" /><h3 className="mt-2 dr-name">Dr. Justin Bieber</h3>
         </div>
       </div>

@@ -8,8 +8,8 @@ const PrivateRoute = ({ children, ...rest }) => {
   if (isLoading) {
     return (
         <div className='container spinner-area'>
-      <div class="spinner-grow justify-content-center" role="status">
-        <p class="visually-hidden text-center">Loading...</p>
+      <div className="spinner-grow justify-content-center" role="status">
+        <p className="visually-hidden text-center">Loading...</p>
       </div>
       </div>
     );

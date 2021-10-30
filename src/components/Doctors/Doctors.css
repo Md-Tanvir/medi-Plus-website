@@ -4,7 +4,7 @@
     object-fit: cover;
     border-radius: 50%;
 }
-.dr-section .row .col-4{
+.dr-section .row .col-md-4{
     text-align: center;
 }
 .dr-section .row{

@@ -5,7 +5,6 @@ import useAuth from "../../hooks/useAuth";
 const Register = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    const [name, setName] = useState("");
     
     const history = useHistory();
     const location =useLocation();
@@ -42,13 +41,10 @@ const Register = () => {
           .catch((error) => {
             const errorMessage = error.message;
             console.log(errorMessage);
-          });
+          })
+          .finally(()=> setisLoading(false))
     }
 
-
-    const handleNameChange = (e) => {
-        setName(e.target.value);
-      };
     
       const handleEmailChange = (e) => {
         setEmail(e.target.value);
@@ -64,14 +60,7 @@ const Register = () => {
       <div className="login-form">
         <form onSubmit={handleRegistration}>
           <h2 className="mb-5">Please Register</h2>
-          <h5>Your Name</h5>
-          <input
-            type="text"
-            placeholder="Enter your name"
-            className="form-control mb-4"
         
-            onBlur={handleNameChange}
-          />
           <h5>Your Email</h5>
           <input
             type="email"

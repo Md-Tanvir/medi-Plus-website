@@ -45,10 +45,12 @@ const Login = () => {
         setUser(user);
         history.push(url);
       })
+
       .catch((error) => {
         const errorMessage = error.message;
         console.log(errorMessage);
-      });
+      })
+      .finally(()=> setisLoading(false))
   };
 
   return (
