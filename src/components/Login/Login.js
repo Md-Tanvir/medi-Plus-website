@@ -42,7 +42,7 @@ const Login = () => {
         setError(errorMessage);
       });
   };
-  // GOogle sign in
+  // Google sign in
   const handleGoogleLogin = () => {
     setisLoading(true)
     googleSignIn()

@@ -7,11 +7,15 @@
     color:#ff8906;
 }
 .appo-btn{
-    background-color: #ef4565;
+    background-color: #21a7d0;
     color: white;
     font-weight: 600;
 }
 .appo-btn:hover{
     background-color: #ff8906;
     color: white;
+}
+.card{
+    border:none;
+    box-shadow: 0 10px 30px rgb(75 131 252 / 10%);
 }

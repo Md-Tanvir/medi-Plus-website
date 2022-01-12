@@ -11,7 +11,7 @@ const Header = () => {
         marginRight: "25px",
       };
     return (
-        <div className="main-menu mb-4">
+        <div className="main-menu m-0">
         <nav className="navbar navbar-expand-lg navbar-light">
           <div className="container">
             {/* Main Logo */}

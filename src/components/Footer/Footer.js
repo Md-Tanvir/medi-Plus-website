@@ -7,9 +7,9 @@ const Footer = () => {
         marginRight: "25px",
       };
     return (
-        <div className='footer-area mt-5 py-5'>
+        <div className='footer-area py-5'>
             <div className=" container">
-            <div className="row gy-5">
+            <div className="row gx-5">
               {/* About Mediplus */}
                 <div className="col-md-4 col-12">
                     <h2>MediPlus</h2>

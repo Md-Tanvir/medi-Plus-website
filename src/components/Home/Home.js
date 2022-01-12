@@ -25,6 +25,7 @@ const Home = () => {
   }, []);
 
   return (
+    <div className=' home-area'>
     <div className="container">
       {/* Hero area */}
       <div className="row hero-area">
@@ -97,8 +98,8 @@ const Home = () => {
       </div>
       {/* Associatied Brands Area */}
       <div className="brand-area">
-        <h2 className="text-center my-5 section-title">Associated With</h2>
-        <div className="row">
+        <h2 className="text-center py-5 section-title">Associated With</h2>
+        <div className="row pb-5">
           <div className="col-md-3 col-12 text-center">
             <img src={brand1} className="brand-img" alt="" />
           </div>
@@ -113,6 +114,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };
